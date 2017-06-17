@@ -1,0 +1,43 @@
+{
+  "name": "openstory",
+  "version": "0.0.0",
+  "description": "Maplestory server written in node.js",
+  "homepage": "github.com/martolini/openstory",
+  "author": {
+    "name": "Martin Skow Røed",
+    "email": "msroed@gmail.com",
+    "url": "msroed.io"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    ""
+  ],
+  "devDependencies": {
+    "coveralls": "^2.12.0",
+    "nsp": "^2.6.3",
+    "eslint": "^3.18.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "jest": "^19.0.2",
+    "jest-cli": "^20.0.0"
+  },
+  "scripts": {
+    "prepublish": "nsp check",
+    "pretest": "eslint . --fix",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "repository": "martolini/openstory",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "license": "MIT"
+}
